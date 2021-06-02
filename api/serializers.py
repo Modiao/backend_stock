@@ -4,7 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
 
-from .models import Customer, Ticket
+from .models import Patient, Ticket
 
 class RegisterUserSerializer(serializers.ModelSerializer):
     """ This will help us to create a User and check the validation """
@@ -44,9 +44,9 @@ class ListUserSerializer(serializers.ModelSerializer):
         model = User
         fields = '__all__'
 
-class CustomerSerializer(serializers.ModelSerializer):
+class PatientSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Customer
+        model = Patient
         fields = '__all__'
 
 class TicketSerializer(serializers.ModelSerializer):
