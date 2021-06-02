@@ -10,7 +10,12 @@ from backend_stock.utilities import get_price
 class HideCharField(HideField, models.CharField):
     pass
 
-class Customer(models.Model):
+class Patient(models.Model):
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    id_patient = models.CharField(
+        'Id Customer', max_length=11,
+        editable=False, unique=True, primary_key=True)
     nom = models.CharField(max_length=200)
     prenom = models.CharField(max_length=200)
     telephone = models.CharField(max_length=20)
