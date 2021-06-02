@@ -1,16 +1,17 @@
 from django.contrib import admin
 
-from .models import Customer, Tickets
+from .models import Customer, Ticket
 
 admin.site.site_header = "Portal Admin Clinique de la Paix 😎"
 admin.site.site_title = "Portal Admin Clinique de la Paix 😎"
 admin.site.index_title = "Welcome to Admin Sene Doctor"
 # Register your models here.
 
-@admin.register(Tickets)
+@admin.register(Ticket)
 class TicketsAdmin(admin.ModelAdmin):
-    list_display = ('type', 'patient', 'montant','create_at','update_at')
-    search_fields = ('type',)
+    list_display = ('id_ticket', 'type', 'patient', 'montant','create_at','update_at','is_valid')
+    search_fields = ('id_ticket','is_valid')
+    list_filter = ('type','is_valid' )
     def has_add_permission(self, request):
         return True
 
