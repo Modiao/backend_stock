@@ -18,6 +18,7 @@ class TicketsAdmin(admin.ModelAdmin):
 @admin.register(Patient)
 class PatientAdmin(admin.ModelAdmin):
     list_display = ('nom', 'prenom', 'telephone','email','address', 'create_at','update_at')
+    search_fields =  ('telephone')
     def has_add_permission(self, request):
         return True
 
