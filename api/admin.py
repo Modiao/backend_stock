@@ -17,7 +17,7 @@ class TicketsAdmin(admin.ModelAdmin):
 
 @admin.register(Patient)
 class PatientAdmin(admin.ModelAdmin):
-    #list_display = ('type', 'patient', 'montant')
+    list_display = ('nom', 'prenom', 'telephone','email','address', 'create_at','update_at')
     def has_add_permission(self, request):
         return True
 
