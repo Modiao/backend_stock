@@ -13,7 +13,7 @@ from rest_framework.parsers import JSONParser
 
 
 
-from .models import Ticket, Customer
+from .models import Ticket, Patient
 from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
         TicketSerializer, UpdateTicketSerializer)
 from backend_stock.utilities import get_price

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Customer, Ticket
+from .models import Patient, Ticket
 
 admin.site.site_header = "Portal Admin Clinique de la Paix 😎"
 admin.site.site_title = "Portal Admin Clinique de la Paix 😎"
@@ -15,9 +15,9 @@ class TicketsAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         return True
 
-@admin.register(Customer)
-class CustomerAdmin(admin.ModelAdmin):
-    #list_display = ('type', 'patient', 'montant','create_at','update_at')
+@admin.register(Patient)
+class PatientAdmin(admin.ModelAdmin):
+    #list_display = ('type', 'patient', 'montant')
     def has_add_permission(self, request):
         return True
 
