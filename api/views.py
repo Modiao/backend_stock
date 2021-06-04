@@ -18,8 +18,6 @@ from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
         TicketSerializer, PatientSerializer)
 from backend_stock.utilities import get_price
 # Create your views here.
-
-@permission_classes((IsAuthenticated,))
 class get_token(ObtainAuthToken):
     "This will generate the token"
     def post(self, request, *args, **kwargs):
