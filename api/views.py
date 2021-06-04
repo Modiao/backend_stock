@@ -19,7 +19,7 @@ from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
 from backend_stock.utilities import get_price
 # Create your views here.
 
-
+@permission_classes((IsAuthenticated,))
 class get_token(ObtainAuthToken):
     "This will generate the token"
     def post(self, request, *args, **kwargs):
@@ -34,28 +34,28 @@ class get_token(ObtainAuthToken):
             'email': user.email
         }, status=200)
 
-
+@permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "
     queryset = User.objects.all()
     permission_class = (AllowAny,)
     serializer_class = RegisterUserSerializer
-
+@permission_classes((IsAuthenticated,))
 class get_all_users(APIView):
     permission_class = (IsAuthenticated,)
     def get(self, request):
         users = User.objects.all()
         serializer = ListUserSerializer(users, many=True)
         return Response(serializer.data)
-
+@permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "
     queryset = User.objects.all()
     permission_class = (AllowAny,)
     serializer_class = RegisterUserSerializer
 
-
 @api_view(['POST'])
+@permission_classes((IsAuthenticated,))
 def get_price_of_ticket(request):
     """
     this will help us to get the price for an specific type of ticket
@@ -67,24 +67,7 @@ def get_price_of_ticket(request):
     if not price:
         return JsonResponse({"error": "No price is available for this ticket"}, status=200)
     return JsonResponse({"price": price}, status=200)
-
-class PatientList(APIView):
-    """
-    List all Patient, or create a new Patient
-    """
-    def get(self, request, format=None):
-        patient = Patient.objects.all()
-        serializer = TicketSerializer(patient, many=True)
-        return Response(serializer.data)
-    
-    def post(self, request, format=None):
-        serializer = PatientSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, 
-                    status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+@permission_classes((IsAuthenticated,))
 class PatientAPIView(mixins.CreateModelMixin,generics.ListAPIView):
     permission_classes = [AllowAny]
     lookup_field = 'id'
@@ -99,6 +82,7 @@ class PatientAPIView(mixins.CreateModelMixin,generics.ListAPIView):
         
         return self.create(request, *args, **kwargs)
 
+@permission_classes((IsAuthenticated,))
 class PatientRudView(generics.RetrieveUpdateDestroyAPIView):
     
     lookup_field = 'id' 
@@ -107,7 +91,7 @@ class PatientRudView(generics.RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         return Patient.objects.all()
 
-
+@permission_classes((IsAuthenticated,))
 class TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):
     permission_classes = [AllowAny]
     lookup_field = 'id'
@@ -121,7 +105,7 @@ class TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):
     def post(self, request, *args, **kwargs):
         
         return self.create(request, *args, **kwargs)
-
+@permission_classes((IsAuthenticated,))
 class TicketRudView(generics.RetrieveUpdateDestroyAPIView):
     
     lookup_field = 'id_ticket' 
