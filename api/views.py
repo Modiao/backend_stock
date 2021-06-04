@@ -15,7 +15,7 @@ from rest_framework.parsers import JSONParser
 
 from .models import Ticket, Patient
 from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
-        TicketSerializer, UpdateTicketSerializer, PatientSerializer)
+        TicketSerializer, PatientSerializer)
 from backend_stock.utilities import get_price
 # Create your views here.
 
@@ -34,6 +34,12 @@ class get_token(ObtainAuthToken):
             'email': user.email
         }, status=200)
 
+@api_view(['POST'])
+def logout(request):
+    logout(request)
+    data = {'success': 'Sucessfully logged out'}
+    return Response(data=data, status=status.HTTP_200_OK)
+        
 @permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "
