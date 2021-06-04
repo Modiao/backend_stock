@@ -1002,7 +1002,7 @@
         "kind": 5,
         "importPath": "backend_stock.urls",
         "description": "backend_stock.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    #path('auth/', get_token.as_view()),\n    url(r'^auth/', obtain_jwt_token),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),\n    path('patients/<int:id>/', PatientRudView.as_view(), name='RUD Patient'),",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    #path('auth/', get_token.as_view()),\n     url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n    url(r'^auth/', obtain_jwt_token),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),",
         "detail": "backend_stock.urls",
         "documentation": {}
     },
