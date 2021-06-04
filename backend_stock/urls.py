@@ -45,7 +45,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
-    path('/auth', get_token.as_view()),
+    path('auth/', get_token.as_view()),
     path('get_users/', get_all_users.as_view(), name='get-all-user'),
     path('get_ticket_price/', get_price_of_ticket, name='Get Price'),
     path('patients/', PatientAPIView.as_view(), name='Patient create list'),
