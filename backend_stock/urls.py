@@ -22,6 +22,7 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from rest_framework.urlpatterns import format_suffix_patterns
 from drf_yasg import openapi
+from rest_framework_jwt.views import obtain_jwt_token
 
 
 
@@ -46,7 +47,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
     path('get_users/', get_all_users.as_view(), name='get-all-user'),
-    path('auth/', get_token.as_view()),
+    #path('auth/', get_token.as_view()),
+    url(r'^auth/', obtain_jwt_token),
     path('logout/', logout),
     path('get_ticket_price/', get_price_of_ticket, name='Get Price'),
     path('patients/', PatientAPIView.as_view(), name='Patient create list'),

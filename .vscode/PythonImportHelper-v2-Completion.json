@@ -468,6 +468,14 @@
         "documentation": {}
     },
     {
+        "label": "obtain_jwt_token",
+        "importPath": "rest_framework_jwt.views",
+        "description": "rest_framework_jwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_jwt.views",
+        "documentation": {}
+    },
+    {
         "label": "get_token",
         "importPath": "api.views",
         "description": "api.views",
@@ -904,7 +912,7 @@
         "kind": 5,
         "importPath": "backend_stock.settings",
         "description": "backend_stock.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n     # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.TokenAuthentication'\n        #'rest_framework.authentication.BasicAuthentication',\n        #'rest_framework.authentication.SessionAuthentication',\n    ]\n}\n# Internationalization",
+        "peekOfCode": "REST_FRAMEWORK = {\n     # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',\n        #'rest_framework.authentication.TokenAuthentication'\n        #'rest_framework.authentication.BasicAuthentication',\n        #'rest_framework.authentication.SessionAuthentication',\n    ]\n}",
         "detail": "backend_stock.settings",
         "documentation": {}
     },
@@ -994,7 +1002,7 @@
         "kind": 5,
         "importPath": "backend_stock.urls",
         "description": "backend_stock.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    path('auth/', get_token.as_view()),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),\n    path('patients/<int:id>/', PatientRudView.as_view(), name='RUD Patient'),\n    path('tickets/', TicketAPIView.as_view(), name='Tikcket API lIST'),",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    #path('auth/', get_token.as_view()),\n    url(r'^auth/', obtain_jwt_token),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),\n    path('patients/<int:id>/', PatientRudView.as_view(), name='RUD Patient'),",
         "detail": "backend_stock.urls",
         "documentation": {}
     },
