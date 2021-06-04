@@ -95,9 +95,7 @@ class PatientRudView(generics.RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         return Patient.objects.all()
 
-@permission_classes((IsAuthenticated,))
 class TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):
-    permission_classes = [AllowAny]
     lookup_field = 'id'
     serializer_class = TicketSerializer
     def get_queryset(self):

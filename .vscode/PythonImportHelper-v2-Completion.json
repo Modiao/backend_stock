@@ -1,0 +1,1028 @@
+[
+    {
+        "label": "api.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "api.models",
+        "description": "api.models",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "HideField",
+        "importPath": "hidefield.fields",
+        "description": "hidefield.fields",
+        "isExtraImport": true,
+        "detail": "hidefield.fields",
+        "documentation": {}
+    },
+    {
+        "label": "ugettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "Choices",
+        "importPath": "model_utils",
+        "description": "model_utils",
+        "isExtraImport": true,
+        "detail": "model_utils",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_string",
+        "importPath": "random_id.utils",
+        "description": "random_id.utils",
+        "isExtraImport": true,
+        "detail": "random_id.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_price",
+        "importPath": "backend_stock.utilities",
+        "description": "backend_stock.utilities",
+        "isExtraImport": true,
+        "detail": "backend_stock.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "get_price",
+        "importPath": "backend_stock.utilities",
+        "description": "backend_stock.utilities",
+        "isExtraImport": true,
+        "detail": "backend_stock.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "mixins",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueValidator",
+        "importPath": "rest_framework.validators",
+        "description": "rest_framework.validators",
+        "isExtraImport": true,
+        "detail": "rest_framework.validators",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password",
+        "importPath": "django.contrib.auth.password_validation",
+        "description": "django.contrib.auth.password_validation",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.password_validation",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Http404",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "ObtainAuthToken",
+        "importPath": "rest_framework.authtoken.views",
+        "description": "rest_framework.authtoken.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.views",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "rest_framework.authtoken.models",
+        "description": "rest_framework.authtoken.models",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.models",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "JSONParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterUserSerializer",
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "isExtraImport": true,
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ListUserSerializer",
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "isExtraImport": true,
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "\\\n        TicketSerializer",
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "isExtraImport": true,
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PatientSerializer",
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "isExtraImport": true,
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "django_on_heroku",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django_on_heroku",
+        "description": "django_on_heroku",
+        "detail": "django_on_heroku",
+        "documentation": {}
+    },
+    {
+        "label": "dotenv_values",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "sentry_sdk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sentry_sdk",
+        "description": "sentry_sdk",
+        "detail": "sentry_sdk",
+        "documentation": {}
+    },
+    {
+        "label": "DjangoIntegration",
+        "importPath": "sentry_sdk.integrations.django",
+        "description": "sentry_sdk.integrations.django",
+        "isExtraImport": true,
+        "detail": "sentry_sdk.integrations.django",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "importPath": "django.conf.urls",
+        "description": "django.conf.urls",
+        "isExtraImport": true,
+        "detail": "django.conf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
+        "isExtraImport": true,
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "format_suffix_patterns",
+        "importPath": "rest_framework.urlpatterns",
+        "description": "rest_framework.urlpatterns",
+        "isExtraImport": true,
+        "detail": "rest_framework.urlpatterns",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "get_token",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_users",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_price_of_ticket",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "\\\n        PatientAPIView",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "PatientRudView",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "TicketAPIView",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "TicketRudView",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0001_initial",
+        "description": "api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Patient',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('create_at', models.DateTimeField(auto_now_add=True)),",
+        "detail": "api.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0002_alter_patient_id",
+        "description": "api.migrations.0002_alter_patient_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='patient',\n            name='id',\n            field=models.AutoField(primary_key=True, serialize=False),\n        ),",
+        "detail": "api.migrations.0002_alter_patient_id",
+        "documentation": {}
+    },
+    {
+        "label": "TicketsAdmin",
+        "kind": 6,
+        "importPath": "api.admin",
+        "description": "api.admin",
+        "peekOfCode": "class TicketsAdmin(admin.ModelAdmin):\n    list_display = ('id_ticket', 'type', 'patient', 'montant','create_at','update_at','is_valid')\n    search_fields = ('id_ticket','is_valid')\n    list_filter = ('type','is_valid' )\n    def has_add_permission(self, request):\n        return True\n@admin.register(Patient)\nclass PatientAdmin(admin.ModelAdmin):\n    list_display = ('nom', 'prenom', 'telephone','email','address', 'create_at','update_at')\n    #search_fields =  ('telephone')",
+        "detail": "api.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PatientAdmin",
+        "kind": 6,
+        "importPath": "api.admin",
+        "description": "api.admin",
+        "peekOfCode": "class PatientAdmin(admin.ModelAdmin):\n    list_display = ('nom', 'prenom', 'telephone','email','address', 'create_at','update_at')\n    #search_fields =  ('telephone')\n    def has_add_permission(self, request):\n        return True",
+        "detail": "api.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_header",
+        "kind": 5,
+        "importPath": "api.admin",
+        "description": "api.admin",
+        "peekOfCode": "admin.site.site_header = \"Portal Admin Clinique de la Paix 😎\"\nadmin.site.site_title = \"Portal Admin Clinique de la Paix 😎\"\nadmin.site.index_title = \"Welcome to Admin Sene Doctor\"\n# Register your models here.\n@admin.register(Ticket)\nclass TicketsAdmin(admin.ModelAdmin):\n    list_display = ('id_ticket', 'type', 'patient', 'montant','create_at','update_at','is_valid')\n    search_fields = ('id_ticket','is_valid')\n    list_filter = ('type','is_valid' )\n    def has_add_permission(self, request):",
+        "detail": "api.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_title",
+        "kind": 5,
+        "importPath": "api.admin",
+        "description": "api.admin",
+        "peekOfCode": "admin.site.site_title = \"Portal Admin Clinique de la Paix 😎\"\nadmin.site.index_title = \"Welcome to Admin Sene Doctor\"\n# Register your models here.\n@admin.register(Ticket)\nclass TicketsAdmin(admin.ModelAdmin):\n    list_display = ('id_ticket', 'type', 'patient', 'montant','create_at','update_at','is_valid')\n    search_fields = ('id_ticket','is_valid')\n    list_filter = ('type','is_valid' )\n    def has_add_permission(self, request):\n        return True",
+        "detail": "api.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.index_title",
+        "kind": 5,
+        "importPath": "api.admin",
+        "description": "api.admin",
+        "peekOfCode": "admin.site.index_title = \"Welcome to Admin Sene Doctor\"\n# Register your models here.\n@admin.register(Ticket)\nclass TicketsAdmin(admin.ModelAdmin):\n    list_display = ('id_ticket', 'type', 'patient', 'montant','create_at','update_at','is_valid')\n    search_fields = ('id_ticket','is_valid')\n    list_filter = ('type','is_valid' )\n    def has_add_permission(self, request):\n        return True\n@admin.register(Patient)",
+        "detail": "api.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "api.apps",
+        "description": "api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'",
+        "detail": "api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "HideCharField",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class HideCharField(HideField, models.CharField):\n    pass\nclass Patient(models.Model):\n    create_at = models.DateTimeField(auto_now_add=True)\n    update_at = models.DateTimeField(auto_now=True)\n    id = models.AutoField(primary_key=True)\n    nom = models.CharField(max_length=200)\n    prenom = models.CharField(max_length=200)\n    telephone = models.CharField(max_length=20)\n    email = models.CharField(max_length=500, blank=True, null=True)",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Patient",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class Patient(models.Model):\n    create_at = models.DateTimeField(auto_now_add=True)\n    update_at = models.DateTimeField(auto_now=True)\n    id = models.AutoField(primary_key=True)\n    nom = models.CharField(max_length=200)\n    prenom = models.CharField(max_length=200)\n    telephone = models.CharField(max_length=20)\n    email = models.CharField(max_length=500, blank=True, null=True)\n    address = models.CharField(max_length=500)\nclass Ticket(models.Model):",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Ticket",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class Ticket(models.Model):\n    TYPE_TICKET = Choices(\n        (\"Consultation_medecine_general\", _(\"Consultation Médecine Générale\")),\n        (\"Consultation_gyneco\",_(\"Consultation Gynéco\")),\n        (\"Consultation_pediatrique\",_(\"Consultation Pédiatrique\")),\n        (\"Consultation_sage_femme\",_(\"Consultation Sage Femme\")),\n        (\"Consultation_rhumatologie\",_(\"Consultation Rhumatologie\")),\n        (\"Consultation_cardiologie\", _(\"Consultation Cardiologie\")),\n        (\"Consultation_orl\",_(\"Consultation ORL\")),\n        (\"Consultation_orphtalologie\", _(\"Consultation Ophtalmologie\")),",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterUserSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class RegisterUserSerializer(serializers.ModelSerializer):\n    \"\"\" This will help us to create a User and check the validation \"\"\"\n    email = serializers.EmailField(\n        required=True,\n        validators=[UniqueValidator(queryset=User.objects.all())]\n    )\n    password = serializers.CharField(write_only=True, required=True, \n        validators=[validate_password])\n    password2 = serializers.CharField(write_only=True, required=True)\n    class Meta:",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ListUserSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class ListUserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = '__all__'\nclass PatientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Patient\n        fields = '__all__'\nclass TicketSerializer(serializers.ModelSerializer):\n    lookup_field = 'id_ticket'",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PatientSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class PatientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Patient\n        fields = '__all__'\nclass TicketSerializer(serializers.ModelSerializer):\n    lookup_field = 'id_ticket'\n    class Meta:\n        model = Ticket\n        fields = '__all__'\n    def create(self, validated_data):",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TicketSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class TicketSerializer(serializers.ModelSerializer):\n    lookup_field = 'id_ticket'\n    class Meta:\n        model = Ticket\n        fields = '__all__'\n    def create(self, validated_data):\n        return Ticket.objects.create(**validated_data)\nclass UpdateTicketSerializer(serializers.Serializer):\n    id_ticket = serializers.CharField()\n    is_valid = serializers.BooleanField()",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateTicketSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class UpdateTicketSerializer(serializers.Serializer):\n    id_ticket = serializers.CharField()\n    is_valid = serializers.BooleanField()",
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "get_token",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class get_token(ObtainAuthToken):\n    \"This will generate the token\"\n    def post(self, request, *args, **kwargs):\n        serializer = self.serializer_class(data=request.data, \n                            context={'request': request})\n        serializer.is_valid(raise_exception=True)\n        user = serializer.validated_data['user']\n        token, create = Token.objects.get_or_create(user=user)\n        return Response({\n            'token': token.key,",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "RegisteerUserView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class RegisteerUserView(generics.CreateAPIView):\n    \" This will be used for the login user \"\n    queryset = User.objects.all()\n    permission_class = (AllowAny,)\n    serializer_class = RegisterUserSerializer\n@permission_classes((IsAuthenticated,))\nclass get_all_users(APIView):\n    permission_class = (IsAuthenticated,)\n    def get(self, request):\n        users = User.objects.all()",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_users",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class get_all_users(APIView):\n    permission_class = (IsAuthenticated,)\n    def get(self, request):\n        users = User.objects.all()\n        serializer = ListUserSerializer(users, many=True)\n        return Response(serializer.data)\n@permission_classes((IsAuthenticated,))\nclass RegisteerUserView(generics.CreateAPIView):\n    \" This will be used for the login user \"\n    queryset = User.objects.all()",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "RegisteerUserView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class RegisteerUserView(generics.CreateAPIView):\n    \" This will be used for the login user \"\n    queryset = User.objects.all()\n    permission_class = (AllowAny,)\n    serializer_class = RegisterUserSerializer\n@api_view(['POST'])\n@permission_classes((IsAuthenticated,))\ndef get_price_of_ticket(request):\n    \"\"\"\n    this will help us to get the price for an specific type of ticket",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "PatientAPIView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class PatientAPIView(mixins.CreateModelMixin,generics.ListAPIView):\n    permission_classes = [AllowAny]\n    lookup_field = 'id'\n    serializer_class = PatientSerializer\n    def get_queryset(self):\n        qs = Patient.objects.all()\n        id = self.request.GET.get(\"id\")\n        if id is not None:      \n            qs = qs.filter(Q(id = id)).distinct()   \n        return qs",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "PatientRudView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class PatientRudView(generics.RetrieveUpdateDestroyAPIView):\n    lookup_field = 'id' \n    serializer_class = PatientSerializer\n    def get_queryset(self):\n        return Patient.objects.all()\nclass TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):\n    lookup_field = 'id'\n    serializer_class = TicketSerializer\n    def get_queryset(self):\n        qs = Ticket.objects.all()",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "TicketAPIView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):\n    lookup_field = 'id'\n    serializer_class = TicketSerializer\n    def get_queryset(self):\n        qs = Ticket.objects.all()\n        id_ticket = self.request.GET.get(\"id_ticket\")\n        if id_ticket is not None:      \n            qs = qs.filter(Q(id_ticket = id_ticket)).distinct()   \n        return qs\n    def post(self, request, *args, **kwargs):",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "TicketRudView",
+        "kind": 6,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "class TicketRudView(generics.RetrieveUpdateDestroyAPIView):\n    lookup_field = 'id_ticket' \n    serializer_class = TicketSerializer\n    def get_queryset(self):\n        return Ticket.objects.all()",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "def logout(request):\n    logout(request)\n    data = {'success': 'Sucessfully logged out'}\n    return Response(data=data, status=status.HTTP_200_OK)\n@permission_classes((IsAuthenticated,))\nclass RegisteerUserView(generics.CreateAPIView):\n    \" This will be used for the login user \"\n    queryset = User.objects.all()\n    permission_class = (AllowAny,)\n    serializer_class = RegisterUserSerializer",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_price_of_ticket",
+        "kind": 2,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "def get_price_of_ticket(request):\n    \"\"\"\n    this will help us to get the price for an specific type of ticket\n    \"\"\"\n    data = JSONParser().parse(request) \n    if \"type\" not in data:\n        return JsonResponse({'code': '400', 'error': 'type is missing'}, status=400)\n    price = get_price.get(data[\"type\"])\n    if not price:\n        return JsonResponse({\"error\": \"No price is available for this ticket\"}, status=200)",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend_stock.asgi",
+        "description": "backend_stock.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "backend_stock.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "config = dotenv_values(\".env\")\nimport sentry_sdk\nfrom sentry_sdk.integrations.django import DjangoIntegration\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-=92s92_5zz_meu8$@gy9^yppkuc407eta=y@%mnv@_7tc-6jp3'\n# SECURITY WARNING: don't run with debug turned on in production!",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-=92s92_5zz_meu8$@gy9^yppkuc407eta=y@%mnv@_7tc-6jp3'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-=92s92_5zz_meu8$@gy9^yppkuc407eta=y@%mnv@_7tc-6jp3'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'api',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'api',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'api',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'api',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework.authtoken',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware'\n]\nROOT_URLCONF = 'backend_stock.urls'",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "ROOT_URLCONF = 'backend_stock.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'backend_stock/templates').replace ('\\\\','/'),],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'backend_stock/templates').replace ('\\\\','/'),],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'backend_stock.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config.get('DATABASE_NAME'),\n        'USER': config.get('USER'),\n        'PASSWORD': config.get('PASSWORD'),\n        'HOST': config.get('HOST'),",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': config.get('DATABASE_NAME'),\n        'USER': config.get('USER'),\n        'PASSWORD': config.get('PASSWORD'),\n        'HOST': config.get('HOST'),\n        'PORT': config.get(\"PORT\"),\n    }\n}",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n     # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.TokenAuthentication'\n        #'rest_framework.authentication.BasicAuthentication',\n        #'rest_framework.authentication.SessionAuthentication',\n    ]\n}\n# Internationalization",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Activate Django-Heroku.",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Activate Django-Heroku.\ndjango_on_heroku.settings(locals())",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Activate Django-Heroku.\ndjango_on_heroku.settings(locals())\nsentry_sdk.init(\n    dsn=\"https://5dfa8d06ef1547f0baf2cc4b51954d17@o402470.ingest.sentry.io/5793758\",\n    integrations=[DjangoIntegration()],",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Activate Django-Heroku.\ndjango_on_heroku.settings(locals())\nsentry_sdk.init(\n    dsn=\"https://5dfa8d06ef1547f0baf2cc4b51954d17@o402470.ingest.sentry.io/5793758\",\n    integrations=[DjangoIntegration()],\n    # Set traces_sample_rate to 1.0 to capture 100%\n    # of transactions for performance monitoring.\n    # We recommend adjusting this value in production.",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Activate Django-Heroku.\ndjango_on_heroku.settings(locals())\nsentry_sdk.init(\n    dsn=\"https://5dfa8d06ef1547f0baf2cc4b51954d17@o402470.ingest.sentry.io/5793758\",\n    integrations=[DjangoIntegration()],\n    # Set traces_sample_rate to 1.0 to capture 100%\n    # of transactions for performance monitoring.\n    # We recommend adjusting this value in production.\n    traces_sample_rate=1.0,",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "backend_stock.urls",
+        "description": "backend_stock.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Snippets API\",\n      default_version='v1',\n      description=\"Test description\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contact@snippets.local\"),\n      license=openapi.License(name=\"BSD License\"),\n   ),\n   public=True,",
+        "detail": "backend_stock.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend_stock.urls",
+        "description": "backend_stock.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    path('auth/', get_token.as_view()),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),\n    path('patients/<int:id>/', PatientRudView.as_view(), name='RUD Patient'),\n    path('tickets/', TicketAPIView.as_view(), name='Tikcket API lIST'),",
+        "detail": "backend_stock.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_price",
+        "kind": 5,
+        "importPath": "backend_stock.utilities",
+        "description": "backend_stock.utilities",
+        "peekOfCode": "get_price = {\n    \"Consultation_medecine_general\": 5000,\n    \"Consultation_gyneco\": 10000,\n    \"Consultation_pediatrique\": 10000,\n    \"Consultation_sage_femme\": 3500,\n    \"Consultation_rhumatologie\": 10000,\n    \"Consultation_cardiologie\": 15000,\n    \"Consultation_orl\": 15000,\n    \"Consultation_orphtalologie\": 15000,\n    \"Hospitalisation_categorie_1\": 15000,",
+        "detail": "backend_stock.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend_stock.wsgi",
+        "description": "backend_stock.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "backend_stock.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend_stock.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
