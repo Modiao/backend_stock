@@ -13,6 +13,7 @@ class HideCharField(HideField, models.CharField):
 class Patient(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
+    id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=200)
     prenom = models.CharField(max_length=200)
     telephone = models.CharField(max_length=20)
@@ -47,7 +48,8 @@ class Ticket(models.Model):
     patient = HideCharField(max_length=500, editable=False)
     is_valid = models.BooleanField(default=True)
 
-    def save(self):
+    def save(self,*args, **kwargs):
+        #super.save(*args, **kwargs)
         self.patient = self.penom_patient +" "+self.nom_patient
         self.montant = get_price.get(self.type)
         if not self.id_ticket:

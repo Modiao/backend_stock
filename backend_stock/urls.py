@@ -25,7 +25,8 @@ from drf_yasg import openapi
 
 
 
-from api.views import get_token, get_all_users, TicketList, TicketDetail, UpdateTicketStatus, get_price_of_ticket
+from api.views import (get_token, get_all_users, get_price_of_ticket, \
+        PatientAPIView, PatientRudView, TicketAPIView, TicketRudView)
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -42,17 +43,15 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    url(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    url(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
     path('api-token-auth/', get_token.as_view()),
     path('get_users/', get_all_users.as_view(), name='get-all-user'),
-    path('ticket/', TicketList.as_view(), name='Get ticket list'),
-    path('update/ticket/status/', UpdateTicketStatus.as_view(), name='Get ticket list'),
-    re_path(r'^ticket/(?P<pk>[0-9A-Z]+)/$', TicketDetail.as_view(), name='Get ticket details'),
     path('get_ticket_price/', get_price_of_ticket, name='Get Price'),
+    path('patients/', PatientAPIView.as_view(), name='Patient create list'),
+    path('patients/<int:id>/', PatientRudView.as_view(), name='RUD Patient'),
+    path('tickets/', TicketAPIView.as_view(), name='Tikcket API lIST'),
+    path('tickets/<str:id_ticket>/', TicketRudView.as_view(), name='RUD Ticket'),
     
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
