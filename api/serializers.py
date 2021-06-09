@@ -50,10 +50,12 @@ class PatientSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class TicketSerializer(serializers.ModelSerializer):
+    lookup_field = 'id_ticket'
     class Meta:
         model = Ticket
         fields = '__all__'
-
+    def create(self, validated_data):
+        return Ticket.objects.create(**validated_data)
 
 class UpdateTicketSerializer(serializers.Serializer):
     id_ticket = serializers.CharField()

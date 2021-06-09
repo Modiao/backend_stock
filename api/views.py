@@ -1,25 +1,23 @@
 from rest_framework import status
-from django.http import Http404
+from django.db.models import Q
+from django.http import Http404, JsonResponse
 from django.contrib.auth.models import User
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from django.shortcuts import get_object_or_404
-from rest_framework import generics
+from rest_framework import generics, mixins
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.parsers import JSONParser
 
 
-
 from .models import Ticket, Patient
 from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
-        TicketSerializer, UpdateTicketSerializer)
+        TicketSerializer, PatientSerializer)
 from backend_stock.utilities import get_price
 # Create your views here.
-
-
 class get_token(ObtainAuthToken):
     "This will generate the token"
     def post(self, request, *args, **kwargs):
@@ -34,76 +32,34 @@ class get_token(ObtainAuthToken):
             'email': user.email
         }, status=200)
 
-
+@api_view(['POST'])
+def logout(request):
+    logout(request)
+    data = {'success': 'Sucessfully logged out'}
+    return Response(data=data, status=status.HTTP_200_OK)
+        
+@permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "
     queryset = User.objects.all()
     permission_class = (AllowAny,)
     serializer_class = RegisterUserSerializer
-
+@permission_classes((IsAuthenticated,))
 class get_all_users(APIView):
     permission_class = (IsAuthenticated,)
     def get(self, request):
         users = User.objects.all()
         serializer = ListUserSerializer(users, many=True)
         return Response(serializer.data)
-
+@permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "
     queryset = User.objects.all()
     permission_class = (AllowAny,)
     serializer_class = RegisterUserSerializer
 
-class TicketList(APIView):
-    """
-    List all Ticket, or create a new Ticket
-    """
-    def get(self, request, format=None):
-        ticket = Ticket.objects.all()
-        serializer = TicketSerializer(ticket, many=True)
-        return Response(serializer.data)
-    
-    def post(self, request, format=None):
-        serializer = TicketSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, 
-                    status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-@permission_classes((IsAuthenticated,))
-class TicketDetail(APIView):
-    """
-    Retrieve, update or delete a ticket instance.
-    """
-    def get(self, request, pk, format=None):
-        comment = get_object_or_404(Ticket, id_ticket=pk)
-        serializer = TicketSerializer(comment)
-        return Response(serializer.data)
-    
-class UpdateTicketStatus(APIView):
-    """
-    This will help us to update the status of un specific ticket
-    """
-    serializer_class = UpdateTicketSerializer
-
-    def post(self, request):
-        serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid():
-            id_ticket = request.data["id_ticket"]
-            ticket = Ticket.objects.filter(
-                id_ticket = id_ticket
-            )
-            if not ticket:
-                return Response({'code': '400', 'error': 'No ticket match with this id'}, status=status.HTTP_400_BAD_REQUEST)
-            ticket = ticket[0]
-            ticket.is_valid = False
-            ticket.save()
-            serialize = TicketSerializer(ticket)
-            return Response(serialize.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 @api_view(['POST'])
+@permission_classes((IsAuthenticated,))
 def get_price_of_ticket(request):
     """
     this will help us to get the price for an specific type of ticket
@@ -115,5 +71,48 @@ def get_price_of_ticket(request):
     if not price:
         return JsonResponse({"error": "No price is available for this ticket"}, status=200)
     return JsonResponse({"price": price}, status=200)
+@permission_classes((IsAuthenticated,))
+class PatientAPIView(mixins.CreateModelMixin,generics.ListAPIView):
+    permission_classes = [AllowAny]
+    lookup_field = 'id'
+    serializer_class = PatientSerializer
+    def get_queryset(self):
+        qs = Patient.objects.all()
+        id = self.request.GET.get("id")
+        if id is not None:      
+            qs = qs.filter(Q(id = id)).distinct()   
+        return qs
+    def post(self, request, *args, **kwargs):
+        
+        return self.create(request, *args, **kwargs)
+
+@permission_classes((IsAuthenticated,))
+class PatientRudView(generics.RetrieveUpdateDestroyAPIView):
     
+    lookup_field = 'id' 
+    serializer_class = PatientSerializer
+
+    def get_queryset(self):
+        return Patient.objects.all()
+
+class TicketAPIView(mixins.CreateModelMixin,generics.ListAPIView):
+    lookup_field = 'id'
+    serializer_class = TicketSerializer
+    def get_queryset(self):
+        qs = Ticket.objects.all()
+        id_ticket = self.request.GET.get("id_ticket")
+        if id_ticket is not None:      
+            qs = qs.filter(Q(id_ticket = id_ticket)).distinct()   
+        return qs
+    def post(self, request, *args, **kwargs):
+        
+        return self.create(request, *args, **kwargs)
+@permission_classes((IsAuthenticated,))
+class TicketRudView(generics.RetrieveUpdateDestroyAPIView):
     
+    lookup_field = 'id_ticket' 
+    serializer_class = TicketSerializer
+
+    def get_queryset(self):
+        return Ticket.objects.all()
+
