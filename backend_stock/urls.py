@@ -26,7 +26,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 
 
-from api.views import (get_token, get_all_users, logout, get_price_of_ticket, \
+from api.views import (login_view, get_token, get_all_users, logout, get_price_of_ticket, \
         PatientAPIView, PatientRudView, TicketAPIView, TicketRudView)
 
 schema_view = get_schema_view(
@@ -50,6 +50,7 @@ urlpatterns = [
     #path('auth/', get_token.as_view()),
      url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     url(r'^auth/', obtain_jwt_token),
+    url(r'^login/', login_view),
     path('logout/', logout),
     path('get_ticket_price/', get_price_of_ticket, name='Get Price'),
     path('patients/', PatientAPIView.as_view(), name='Patient create list'),

@@ -1,22 +1,28 @@
 from rest_framework import status
 from django.db.models import Q
-from django.http import Http404, JsonResponse
-from django.contrib.auth.models import User
+from django.http import Http404, JsonResponse, response
+#from django.contrib.auth.models import User
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
+from django.views.decorators.csrf import ensure_csrf_cookie
 from django.shortcuts import get_object_or_404
+from django.contrib.auth import get_user_model
 from rest_framework import generics, mixins
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.parsers import JSONParser
+from rest_framework import exceptions
 
+
+User = get_user_model()
 
 from .models import Ticket, Patient
 from api.serializers import (RegisterUserSerializer, ListUserSerializer, \
-        TicketSerializer, PatientSerializer)
+        TicketSerializer, PatientSerializer, UserSerializer)
 from backend_stock.utilities import get_price
+from api.utils import generate_access_token, generate_refresh_token
 # Create your views here.
 class get_token(ObtainAuthToken):
     "This will generate the token"
@@ -32,12 +38,42 @@ class get_token(ObtainAuthToken):
             'email': user.email
         }, status=200)
 
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+@ensure_csrf_cookie
+def login_view(request):
+    email = request.data.get('email')
+    password = request.data.get('password')
+    response = Response()
+    if (email is None) or (password is None):
+        raise exceptions.AuthenticationFailed(
+            'email and password required')
+    user = User.objects.filter(email=email).first()
+    if(user is None):
+        raise exceptions.AuthenticationFailed('user not found')
+    if (not user.check_password(password)):
+        raise exceptions.AuthenticationFailed('wrong password')
+
+    serializer_user = UserSerializer(user).data
+    access_token = generate_access_token(user)
+    refresh_token = generate_refresh_token(user)
+    
+    response.set_cookie(key='refresh_token', value=refresh_token, httponly=True)
+    response.data = {
+        'access_token': access_token,
+        'user': serializer_user
+    }
+
+    return response
+
+
 @api_view(['POST'])
 def logout(request):
     logout(request)
     data = {'success': 'Sucessfully logged out'}
     return Response(data=data, status=status.HTTP_200_OK)
-        
+
 @permission_classes((IsAuthenticated,))
 class RegisteerUserView(generics.CreateAPIView):
     " This will be used for the login user "

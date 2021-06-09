@@ -1,10 +1,13 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 from hidefield.fields import HideField
 from django.utils.translation import ugettext_lazy as _
 from model_utils import Choices
 from random_id.utils import generate_random_string as id_generator
 
 # Create your models here.
+class User(AbstractUser):
+    pass
 
 from backend_stock.utilities import get_price
 class HideCharField(HideField, models.CharField):

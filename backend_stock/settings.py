@@ -60,11 +60,12 @@ MIDDLEWARE = [
 'django.middleware.clickjacking.XFrameOptionsMiddleware',
  ]
 
+AUTH_USER_MODEL = 'api.User'
 
 # CORS_ALLOWED_ORIGINS = [
 #     "*"
 # ]
-
+REFRESH_TOKEN_SECRET="youcango"
 
 CORS_ORIGIN_ALLOW_ALL = True
 

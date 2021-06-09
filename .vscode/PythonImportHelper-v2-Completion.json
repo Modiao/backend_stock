@@ -9,6 +9,40 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -25,14 +59,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -41,11 +67,12 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "django.utils.timezone",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.db",
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
         "documentation": {}
     },
     {
@@ -62,6 +89,14 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
         "documentation": {}
     },
     {
@@ -153,7 +188,7 @@
         "documentation": {}
     },
     {
-        "label": "permissions",
+        "label": "exceptions",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -161,19 +196,11 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -201,6 +228,40 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "Q",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -218,6 +279,14 @@
     },
     {
         "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "response",
         "importPath": "django.http",
         "description": "django.http",
         "isExtraImport": true,
@@ -265,11 +334,27 @@
         "documentation": {}
     },
     {
+        "label": "ensure_csrf_cookie",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
         "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -337,6 +422,30 @@
         "documentation": {}
     },
     {
+        "label": "UserSerializer",
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "isExtraImport": true,
+        "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_access_token",
+        "importPath": "api.utils",
+        "description": "api.utils",
+        "isExtraImport": true,
+        "detail": "api.utils",
+        "documentation": {}
+    },
+    {
+        "label": "generate_refresh_token",
+        "importPath": "api.utils",
+        "description": "api.utils",
+        "isExtraImport": true,
+        "detail": "api.utils",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -393,14 +502,6 @@
         "description": "sentry_sdk.integrations.django",
         "isExtraImport": true,
         "detail": "sentry_sdk.integrations.django",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -473,6 +574,14 @@
         "description": "rest_framework_jwt.views",
         "isExtraImport": true,
         "detail": "rest_framework_jwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "importPath": "api.views",
+        "description": "api.views",
+        "isExtraImport": true,
+        "detail": "api.views",
         "documentation": {}
     },
     {
@@ -561,17 +670,8 @@
         "kind": 6,
         "importPath": "api.migrations.0001_initial",
         "description": "api.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Patient',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('create_at', models.DateTimeField(auto_now_add=True)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Patient',\n            fields=[\n                ('create_at', models.DateTimeField(auto_now_add=True)),",
         "detail": "api.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "api.migrations.0002_alter_patient_id",
-        "description": "api.migrations.0002_alter_patient_id",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='patient',\n            name='id',\n            field=models.AutoField(primary_key=True, serialize=False),\n        ),",
-        "detail": "api.migrations.0002_alter_patient_id",
         "documentation": {}
     },
     {
@@ -629,6 +729,15 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class User(AbstractUser):\n    pass\nfrom backend_stock.utilities import get_price\nclass HideCharField(HideField, models.CharField):\n    pass\nclass Patient(models.Model):\n    create_at = models.DateTimeField(auto_now_add=True)\n    update_at = models.DateTimeField(auto_now=True)\n    id = models.AutoField(primary_key=True)\n    nom = models.CharField(max_length=200)",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
         "label": "HideCharField",
         "kind": 6,
         "importPath": "api.models",
@@ -653,6 +762,15 @@
         "description": "api.models",
         "peekOfCode": "class Ticket(models.Model):\n    TYPE_TICKET = Choices(\n        (\"Consultation_medecine_general\", _(\"Consultation Médecine Générale\")),\n        (\"Consultation_gyneco\",_(\"Consultation Gynéco\")),\n        (\"Consultation_pediatrique\",_(\"Consultation Pédiatrique\")),\n        (\"Consultation_sage_femme\",_(\"Consultation Sage Femme\")),\n        (\"Consultation_rhumatologie\",_(\"Consultation Rhumatologie\")),\n        (\"Consultation_cardiologie\", _(\"Consultation Cardiologie\")),\n        (\"Consultation_orl\",_(\"Consultation ORL\")),\n        (\"Consultation_orphtalologie\", _(\"Consultation Ophtalmologie\")),",
         "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "api.serializers",
+        "description": "api.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'username', 'email',\n                  'first_name', 'last_name', 'is_active']\nclass RegisterUserSerializer(serializers.ModelSerializer):\n    \"\"\" This will help us to create a User and check the validation \"\"\"\n    email = serializers.EmailField(\n        required=True,\n        validators=[UniqueValidator(queryset=User.objects.all())]",
+        "detail": "api.serializers",
         "documentation": {}
     },
     {
@@ -698,6 +816,24 @@
         "description": "api.serializers",
         "peekOfCode": "class UpdateTicketSerializer(serializers.Serializer):\n    id_ticket = serializers.CharField()\n    is_valid = serializers.BooleanField()",
         "detail": "api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_access_token",
+        "kind": 2,
+        "importPath": "api.utils",
+        "description": "api.utils",
+        "peekOfCode": "def generate_access_token(user):\n    access_token_payload = {\n        'user_id': user.id,\n        'exp': datetime.datetime.utcnow() + datetime.timedelta(days=0, minutes=5),\n        'iat': datetime.datetime.utcnow(),\n    }\n    access_token = jwt.encode(access_token_payload,\n                              settings.SECRET_KEY, algorithm='HS256').decode('utf-8')\n    return access_token\ndef generate_refresh_token(user):",
+        "detail": "api.utils",
+        "documentation": {}
+    },
+    {
+        "label": "generate_refresh_token",
+        "kind": 2,
+        "importPath": "api.utils",
+        "description": "api.utils",
+        "peekOfCode": "def generate_refresh_token(user):\n    refresh_token_payload = {\n        'user_id': user.id,\n        'exp': datetime.datetime.utcnow() + datetime.timedelta(days=7),\n        'iat': datetime.datetime.utcnow()\n    }\n    refresh_token = jwt.encode(\n        refresh_token_payload, settings.REFRESH_TOKEN_SECRET, algorithm='HS256').decode('utf-8')\n    return refresh_token",
+        "detail": "api.utils",
         "documentation": {}
     },
     {
@@ -773,6 +909,15 @@
         "documentation": {}
     },
     {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "def login_view(request):\n    email = request.data.get('email')\n    password = request.data.get('password')\n    response = Response()\n    if (email is None) or (password is None):\n        raise exceptions.AuthenticationFailed(\n            'email and password required')\n    user = User.objects.filter(email=email).first()\n    if(user is None):\n        raise exceptions.AuthenticationFailed('user not found')",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
         "label": "logout",
         "kind": 2,
         "importPath": "api.views",
@@ -787,6 +932,15 @@
         "importPath": "api.views",
         "description": "api.views",
         "peekOfCode": "def get_price_of_ticket(request):\n    \"\"\"\n    this will help us to get the price for an specific type of ticket\n    \"\"\"\n    data = JSONParser().parse(request) \n    if \"type\" not in data:\n        return JsonResponse({'code': '400', 'error': 'type is missing'}, status=400)\n    price = get_price.get(data[\"type\"])\n    if not price:\n        return JsonResponse({\"error\": \"No price is available for this ticket\"}, status=200)",
+        "detail": "api.views",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "api.views",
+        "description": "api.views",
+        "peekOfCode": "User = get_user_model()\nfrom .models import Ticket, Patient\nfrom api.serializers import (RegisterUserSerializer, ListUserSerializer, \\\n        TicketSerializer, PatientSerializer, UserSerializer)\nfrom backend_stock.utilities import get_price\nfrom api.utils import generate_access_token, generate_refresh_token\n# Create your views here.\nclass get_token(ObtainAuthToken):\n    \"This will generate the token\"\n    def post(self, request, *args, **kwargs):",
         "detail": "api.views",
         "documentation": {}
     },
@@ -859,6 +1013,15 @@
         "importPath": "backend_stock.settings",
         "description": "backend_stock.settings",
         "peekOfCode": "MIDDLEWARE = [\n'corsheaders.middleware.CorsMiddleware',\n'django.middleware.security.SecurityMiddleware',\n'django.contrib.sessions.middleware.SessionMiddleware',\n'django.middleware.common.CommonMiddleware',\n'django.middleware.csrf.CsrfViewMiddleware',\n'django.contrib.auth.middleware.AuthenticationMiddleware',\n'django.contrib.messages.middleware.MessageMiddleware',\n'django.middleware.clickjacking.XFrameOptionsMiddleware',\n ]",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'api.User'\n# CORS_ALLOWED_ORIGINS = [\n#     \"*\"\n# ]\nREFRESH_TOKEN_SECRET=\"youcango\"\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_HEADERS = (\n        'x-requested-with',\n        'content-type',\n        'accept',",
         "detail": "backend_stock.settings",
         "documentation": {}
     },
@@ -1020,7 +1183,7 @@
         "kind": 5,
         "importPath": "backend_stock.urls",
         "description": "backend_stock.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    #path('auth/', get_token.as_view()),\n     url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n    url(r'^auth/', obtain_jwt_token),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),\n    path('patients/', PatientAPIView.as_view(), name='Patient create list'),",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),\n    path('get_users/', get_all_users.as_view(), name='get-all-user'),\n    #path('auth/', get_token.as_view()),\n     url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n    url(r'^auth/', obtain_jwt_token),\n    url(r'^login/', login_view),\n    path('logout/', logout),\n    path('get_ticket_price/', get_price_of_ticket, name='Get Price'),",
         "detail": "backend_stock.urls",
         "documentation": {}
     },

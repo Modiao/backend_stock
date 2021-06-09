@@ -4,8 +4,12 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
 
-from .models import Patient, Ticket
-
+from .models import User, Patient, Ticket
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email',
+                  'first_name', 'last_name', 'is_active']
 class RegisterUserSerializer(serializers.ModelSerializer):
     """ This will help us to create a User and check the validation """
 
