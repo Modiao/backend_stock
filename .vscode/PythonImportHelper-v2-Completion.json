@@ -867,7 +867,16 @@
         "kind": 5,
         "importPath": "backend_stock.settings",
         "description": "backend_stock.settings",
-        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nROOT_URLCONF = 'backend_stock.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'backend_stock/templates').replace ('\\\\','/'),],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_HEADERS = (\n        'x-requested-with',\n        'content-type',\n        'accept',\n        'origin',\n        'authorization',\n        'x-csrftoken'\n)\nROOT_URLCONF = 'backend_stock.urls'",
+        "detail": "backend_stock.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_HEADERS",
+        "kind": 5,
+        "importPath": "backend_stock.settings",
+        "description": "backend_stock.settings",
+        "peekOfCode": "CORS_ALLOW_HEADERS = (\n        'x-requested-with',\n        'content-type',\n        'accept',\n        'origin',\n        'authorization',\n        'x-csrftoken'\n)\nROOT_URLCONF = 'backend_stock.urls'\nTEMPLATES = [",
         "detail": "backend_stock.settings",
         "documentation": {}
     },
